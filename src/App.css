@@ -1,0 +1,195 @@
+
+.App {
+  text-align: center;
+}
+*{
+  font-family: 'Old Standard TT', serif;
+}
+
+input,button,textarea,select{
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  border: 0px;
+  border-radius: 0;
+}
+
+body::after{
+  background-image: url("img/bc.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: '';
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.06;
+}
+
+
+.textform{
+   padding: 1px;
+   position: fixed;
+   bottom: 2rem;
+   z-index: 1;
+   background-color: rgb(195, 195, 195);
+   width: 90%;
+   
+  left:50%;
+  transform: translateX(-50%);
+
+  }
+
+
+  .app-textform{
+    display: flex !important;
+    flex-direction: row !important;
+  
+  }
+
+  .textform{
+    border:2px hidden red;
+    border-radius: 40px;
+    padding-left: 1rem;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .iconbutton{
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  }
+
+  .iconbutton img{
+ max-width: 100%;
+ max-height: 100%;
+ display: block;
+ object-fit: cover;
+ object-position: center;
+  
+  }
+
+  .iconinput{
+    flex: 1;
+    width: 90%;
+    padding-bottom: 1rem;
+  }
+
+  .baner{
+    position: sticky;
+    top: 0;
+    height: 10%;
+    z-index: 1;
+    width: 100%;
+    box-shadow: inset 0 0 1em rgb(0, 0, 0), 0 0 0.3em rgb(0, 0, 0);
+  
+    }
+.title{
+  background-color:white;
+  width: 100%;
+  
+}
+.baner2{
+float: right;
+margin-right: 10px;
+}
+
+
+.settings{
+  background-color: rgb(241, 239, 239);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100 !important;
+  height: 50%;
+  animation: blowUpModal .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;}
+
+.button_settings{
+ bottom: 0;
+width: 100%;
+ position: absolute;
+ background-color: rgb(209, 209, 209);
+}
+
+.settings_username{
+  padding: 10px;
+}
+.settings_channel{
+ display: flex;
+ flex-direction: column;
+ width: 300px;
+}
+
+.color{
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  width: 200px;
+  height: 100px;
+  transform: translateX(-50%);
+
+}
+
+
+
+    .main{
+      clear: both;
+    height: 80%;
+    margin-bottom: 10%;
+    }
+    footer{
+        height: 10%;
+        z-index: 1;
+    }
+
+    @media (max-device-width: 1000px) 
+{
+  .main{
+    height: 80%;
+    margin-bottom: 30%;
+    }
+
+    .settings{
+      background-color: rgb(241, 239, 239);
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20%;
+      position: relative;
+      z-index: 100 !important;
+      height: 50%;
+      animation: blowUpModal .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    }
+    .color{
+      position: fixed;
+      left: 50%;
+      top: 20%;
+     
+      transform: translateX(-50%);
+    
+    }
+}
+
+.input-pass-main
+{
+display: none;
+}
+
+.input-pass-custom{
+
+}
+
+@keyframes blowUpModal {
+  0% {
+    transform:scale(0.5);
+  }
+  100% {
+    transform:scale(1);
+  }
+}

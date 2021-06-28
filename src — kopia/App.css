@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+}
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* overflow-y:hidden; */
+  scrollbar-width: none;
+}
+
+.textform{
+   padding: 1px;
+   position: fixed;
+   bottom: 0;
+   z-index: 1;
+   background-color: rgb(195, 195, 195);
+   width: 90%;
+   margin: 20px;
+   right: 3%;
+
+  }
+
+
+  .baner{
+    position: sticky;
+   top: 0;
+  }
+
+  .app-textform{
+    display: flex !important;
+    flex-direction: row !important;
+  }
+
+  .iconbutton{
+    flex: 0;
+  }
+
+  .iconinput{
+    flex: 1;
+  }

@@ -1,0 +1,31 @@
+.mess-card{
+    padding: 10px;
+    width: fit-content;
+    margin: 10px;
+    max-width: 60%;
+   
+}
+
+
+
+.mess_user{
+    margin-left: auto;
+    
+}
+
+.mess-card-user{
+text-align: right;
+
+color: white;
+}
+
+.mess-card-anon{
+color: black;
+text-align: left;
+background-color: #ffffff !important;
+}
+
+.username{
+    color: gray;
+}
+

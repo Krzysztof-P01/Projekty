@@ -10,7 +10,6 @@ import { Icon} from '@iconify/react';
 import latinCross from '@iconify-icons/emojione-monotone/latin-cross';
 import Modal from 'react-modal';
 // npm install --save-dev @iconify/react @iconify-icons/bytesize
-import { InlineIcon } from '@iconify/react';
 import settingsIcon from '@iconify-icons/bytesize/settings';
 // npm install --save-dev @iconify/react @iconify-icons/ic
 import baselineChangeCircle from '@iconify-icons/ic/baseline-change-circle';
@@ -77,7 +76,7 @@ useEffect(() => {
               }, [input,messages])
              
               useEffect(() => {
-                if(color.hex!="#000000")
+                if(color.hex!=="#000000")
                 localStorage.setItem("bc",color.hex);
                 else if (!localStorage.getItem("bc"))
                 {
@@ -123,7 +122,7 @@ useEffect(() => {
 <FormControl >
         
 <div className="settings_username">
-<InputLabel > nazwa użytkownika:</InputLabel>
+<InputLabel > nazwa użytkownika: </InputLabel>
 <Input error={username.length>=20} value={username_tmp}  placeholder={username}  onChange={event => setUsername_tmp(event.target.value)}/>
 <button disabled={!username_tmp.trim()||username_tmp.length>=20}  onClick={()=>setUsername(username_tmp)}><Icon width="2rem" icon={baselineChangeCircle} /></button>
 </div>
